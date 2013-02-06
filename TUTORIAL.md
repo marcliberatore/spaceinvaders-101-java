@@ -4,7 +4,10 @@ Adapted from: <http://www.cokeandcode.com/info/tut2d.html>
 
 Originally written by [Kevin Glass].
 
-Markdownified and lightly edited by Marc Liberatore
+Markdownified and lightly edited by [Marc Liberatore].
+
+[Kevin Glass]:http://www.cokeandcode.com/
+[Marc Liberatore]:http://people.cs.umass.edu/~liberato/
 
 # Introduction
 
@@ -732,8 +735,7 @@ Game sprites provided by [Ari Feldman]
 A large number of people over at the [Java Gaming Forums]  
 
 
-[Kevin Glass]: mailto:kevin@newdawnsoftware.com
-[Ari Feldman]: http://www.arifeldman.com/games/spritelib.html
+[Ari Feldman]: http://www.widgetworx.com/widgetworx/portfolio/spritelib.html
 [Java Gaming Forums]: http://www.java-gaming.org/
 
 
