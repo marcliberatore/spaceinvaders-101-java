@@ -29,6 +29,7 @@ import javax.swing.JPanel;
  * 
  * @author Kevin Glass
  */
+@SuppressWarnings("serial")
 public class Game extends Canvas {
 	/** The stragey that allows us to use accelerate page flipping */
 	private BufferStrategy strategy;
