@@ -25,7 +25,7 @@ to create an executable jar in `target`.
 You can execute the jar by double-clicking it in your GUI, or using
 
 ```bash
-java -jar spaceinvaders-java-101-1.0.0.jar
+java -jar spaceinvaders-java-101-1.0.1.jar
 ```
 
 after navigating to the `target` directory.
