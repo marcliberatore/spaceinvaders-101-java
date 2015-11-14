@@ -63,12 +63,14 @@ public class Game extends Canvas {
 	/** True if game logic needs to be applied this loop, normally as a result of a game event */
 	private boolean logicRequiredThisLoop = false;
 	
+	private String windowTitle = "Space Invaders 104 using Maven 3";
+	
 	/**
 	 * Construct our game and set it running.
 	 */
 	public Game() {
 		// create a frame to contain our game
-		JFrame container = new JFrame("Space Invaders 101");
+		JFrame container = new JFrame(windowTitle);
 		
 		// get hold the content of the frame and set up the resolution of the game
 		JPanel panel = (JPanel) container.getContentPane();
