@@ -19,7 +19,7 @@ The [maven natives] plugin as demonstrated by the [maven-nativedependencies-exam
 
 
 ## Build Instructions
-You'll need Apache Maven 3.0+ and JDK 1.8+. Clone the repository, and afterwards:
+You'll need Apache Maven 3.0+ and JDK 1.8+. Clone the repository locally and run afterwards in your Terminal:
 ```bash 
 cd spaceinvaders-104-java 
 mvn package

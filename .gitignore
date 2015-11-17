@@ -1,31 +1,9 @@
+# ignore IntelliJ Files and Project Folders
+*.iml
+.idea
 target
-### /Users/liberato/.gitignore-boilerplates/Global/Eclipse.gitignore
 
-*.pydevproject
+# eclipse
+.settings
 .project
-.metadata
-bin/**
-tmp/**
-tmp/**/*
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
 .classpath
-.settings/
-.loadpath
-
-# External tool builders
-.externalToolBuilders/
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# CDT-specific
-.cproject
-
-# PDT-specific
-.buildpath
-
-
