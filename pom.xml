@@ -13,6 +13,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
+		<jogl.version>2.3.2</jogl.version>
 		<lwjgl.version>2.9.3</lwjgl.version>
 		<finalName>${project.artifactId}-${project.version}.jar</finalName>
 		<main.class>org.newdawn.spaceinvaders.Game</main.class>
@@ -21,6 +22,17 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.jogamp.jogl</groupId>
+			<artifactId>jogl-all-main</artifactId>
+			<version>${jogl.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jogamp.gluegen</groupId>
+			<artifactId>gluegen-rt-main</artifactId>
+			<version>${jogl.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.lwjgl.lwjgl</groupId>
 			<artifactId>lwjgl</artifactId>

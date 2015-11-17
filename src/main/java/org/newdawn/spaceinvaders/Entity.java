@@ -40,7 +40,7 @@ public abstract class Entity {
 	 * @param y The initial y location of this entity
 	 */
 	public Entity(String ref,int x,int y) {
-		this.sprite = SpriteStore.get().getSprite(ref);
+	    this.sprite = ResourceFactory.get().getSprite(ref);
 		this.x = x;
 		this.y = y;
 	}
@@ -93,14 +93,12 @@ public abstract class Entity {
 		return dy;
 	}
 	
-	/**
-	 * Draw this entity to the graphics context provided
-	 * 
-	 * @param g The graphics context on which to draw
-	 */
-	public void draw(Graphics g) {
-		sprite.draw(g,(int) x,(int) y);
-	}
+    /**
+     * Draw this entity to the graphics context provided
+     */
+    public void draw() {
+        sprite.draw((int) x,(int) y);
+    }
 	
 	/**
 	 * Do the logic associated with this entity. This method
