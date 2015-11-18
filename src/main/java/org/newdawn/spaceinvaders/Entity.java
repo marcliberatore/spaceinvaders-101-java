@@ -1,6 +1,5 @@
 package org.newdawn.spaceinvaders;
 
-import java.awt.Graphics;
 import java.awt.Rectangle;
 
 /**
@@ -40,7 +39,7 @@ public abstract class Entity {
 	 * @param y The initial y location of this entity
 	 */
 	public Entity(String ref,int x,int y) {
-	    this.sprite = ResourceFactory.get().getSprite(ref);
+		this.sprite = ResourceFactory.get().getSprite(ref);
 		this.x = x;
 		this.y = y;
 	}
@@ -69,7 +68,7 @@ public abstract class Entity {
 	/**
 	 * Set the vertical speed of this entity
 	 * 
-	 * @param dx The vertical speed of this entity (pixels/sec)
+	 * @param dy The vertical speed of this entity (pixels/sec)
 	 */
 	public void setVerticalMovement(double dy) {
 		this.dy = dy;
@@ -93,12 +92,12 @@ public abstract class Entity {
 		return dy;
 	}
 	
-    /**
-     * Draw this entity to the graphics context provided
-     */
-    public void draw() {
-        sprite.draw((int) x,(int) y);
-    }
+	/**
+	 * Draw this entity to the graphics context provided
+	 */
+	public void draw() {
+		sprite.draw((int) x,(int) y);
+	}
 	
 	/**
 	 * Do the logic associated with this entity. This method

@@ -122,7 +122,7 @@ public class ResourceFactory {
 			}
 			case OPENGL_JOGL:
 			{
-//				return new JoglSprite((JoglGameWindow) window,ref);
+				return new JoglSprite((JoglGameWindow) window,ref);
 			}
 			case OPENGL_LWJGL:
 			{
