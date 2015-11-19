@@ -1,5 +1,9 @@
 # Space Invaders 101
 
+## More Tutorials
+
+[Part 2](https://github.com/marcliberatore/spaceinvaders-102-java) of the tutorial is also available.
+
 ## Description
 
 Space Invaders 101 is a Java2D tutorial game, written and placed in the public domain by [Kevin Glass].
