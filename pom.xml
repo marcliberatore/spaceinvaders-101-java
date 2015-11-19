@@ -1,32 +1,59 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>marcliberatore</groupId>
-  <artifactId>spaceinvaders-java-101</artifactId>
-  <version>1.0.1</version>
-  <packaging>jar</packaging>
+    <groupId>marcliberatore</groupId>
+    <artifactId>spaceinvaders-java-101</artifactId>
+    <version>1.0.1</version>
+    <packaging>jar</packaging>
 
-  <name>spaceinvaders-java-101</name>
-  <url>https://github.com/marcliberatore/spaceinvaders-101-java</url>
+    <name>spaceinvaders-java-101</name>
+    <url>https://github.com/marcliberatore/spaceinvaders-101-java</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.plugin.version>3.3</maven.compiler.plugin.version>
+        <maven.resources.plugin.version>2.7</maven.resources.plugin.version>
+        <maven.jar.plugin.version>2.6</maven.jar.plugin.version>
+    </properties>
 
-  <build>
-    <plugins>
-      <plugin>
-	<groupId>org.apache.maven.plugins</groupId>
-	<artifactId>maven-jar-plugin</artifactId>
-	<configuration>
-	  <archive>
-	    <manifest>
-	      <mainClass>org.newdawn.spaceinvaders.Game</mainClass>
-	    </manifest>
-	  </archive>
-	</configuration>
-      </plugin>
-    </plugins>
-  </build>
+    <build>
+
+        <plugins>
+
+            <!-- Plugin required to enable Maven to handle Java Source Code higher than 1.3 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <showWarnings>true</showWarnings>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>${maven.resources.plugin.version}</version>
+            </plugin>
+
+            <!-- Plugin required to enable Maven to create Manifest with proper main-Class -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${maven.jar.plugin.version}</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>org.newdawn.spaceinvaders.Game</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            
+        </plugins>
+    </build>
 </project>
